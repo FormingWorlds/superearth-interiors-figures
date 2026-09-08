@@ -630,7 +630,8 @@ def plot_conservation(d, outdir):
     ax[2].set(xlabel='Time [kyr]', ylabel=r'$\max|S(t)-S_0|$ [J/kg/K]')
     ax[2].set_ylim(1e-16, 1e-3)
     _panel_label(ax[2], '(c) isentropic\ninvariance', y=0.5, va='center')
-    ax[2].legend(loc='lower right')
+    # between the tolerance line at the top and the panel label, clear of both
+    ax[2].legend(loc='upper right', bbox_to_anchor=(0.98, 0.80))
     ax[2].grid(True, which='both', alpha=0.25)
 
     # Panels (a) and (c) have a linear time axis; (b) is log-log, so it needs a
