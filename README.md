@@ -1,5 +1,7 @@
 # Figure data and scripts: Super-Earth Interiors Shrink by About 10% as They Crystallise
 
+[![DOI](https://zenodo.org/badge/1361497374.svg)](https://doi.org/10.5281/zenodo.22663462)
+
 Data and scripts that reproduce every figure of the paper *Super-Earth Interiors Shrink by About 10% as They Crystallise* (Lichtenberg et al. 2026). Archived on Zenodo: [10.5281/zenodo.22663462](https://doi.org/10.5281/zenodo.22663462) (all versions; the first release, v26.09.08, is [10.5281/zenodo.22663463](https://doi.org/10.5281/zenodo.22663463)). The repository is self-contained: one command regenerates all 19 figures from the data it holds. Nothing is downloaded, no environment variable is read, and no file outside the repository is touched.
 
 ## Quick start
