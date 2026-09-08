@@ -175,7 +175,6 @@ def plot_chili(c, outdir):
         ix.set_mono_ticks(a)
     out = os.path.join(outdir, 'chili_validation.pdf')
     fig.savefig(out)
-    fig.savefig(out.replace('.pdf', '.png'), dpi=200)
     plt.close(fig)
     print('wrote', os.path.relpath(out, HERE))
 

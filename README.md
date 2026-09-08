@@ -12,7 +12,7 @@ python make_figures.py
 
 The PDFs are written to `figures/` under the file names used in the paper. `python make_figures.py --only redox volatiles` runs a subset. Figure 1 is a TikZ drawing; `make_figures.py` compiles it when `latexmk` is on the PATH and otherwise skips it with a message (the compiled PDF is in `figures/` in any case).
 
-The plotting needs Python 3.12 with numpy, matplotlib and pandas; `environment.yml` pins the versions that produced the figures in the paper. A different matplotlib version can place text slightly differently.
+The plotting needs Python 3.12 with numpy, matplotlib and pandas; `requirements.txt` pins the versions that produced the figures in the paper, and `environment.yml` installs them from PyPI into a conda environment (`pip install -r requirements.txt` in any Python 3.12 works as well). The PyPI wheel of matplotlib bundles FreeType 2.6.1, and the figures in the paper were rendered with it; a matplotlib built against another FreeType version, for example the conda-forge package, places glyphs a fraction of a point differently.
 
 ## Layout
 
