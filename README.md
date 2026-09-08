@@ -57,9 +57,9 @@ Columns kept per run: S1, `Time R_int R_obs R_core Phi_global T_magma T_surf T_c
 
 | File | Content | Produced with |
 |---|---|---|
-| `fig02_13_zalmoxis_literature_mr/zalmoxis_grids/` | Zalmoxis mass-radius grids (PALEOS and Seager et al. 2007 equations of state) and interior profiles | Zalmoxis |
-| `fig02_13_zalmoxis_literature_mr/magrathea/` | MAGRATHEA mass-radius relations and interior profiles (Huang, Rice and Steffen 2022) | MAGRATHEA |
-| `fig02_13_zalmoxis_literature_mr/reference_data/` | Zeng et al. (2016) tabulated mass-radius relations | published tables |
+| `fig02_13_zalmoxis_literature_mr/zalmoxis_grids/` | Zalmoxis mass-radius grids (PALEOS and [Seager et al. 2007](#references) equations of state) and interior profiles | Zalmoxis |
+| `fig02_13_zalmoxis_literature_mr/magrathea/` | MAGRATHEA mass-radius relations and interior profiles ([Huang et al. 2022](#references)) | MAGRATHEA |
+| `fig02_13_zalmoxis_literature_mr/reference_data/` | [Zeng et al. (2016)](#references) tabulated mass-radius relations | published tables |
 | `fig03_calliope_atmodeller/data/fig3_grid.csv` | oxygen-fugacity offsets of CALLIOPE and atmodeller across magma temperature | CALLIOPE cross-module comparison (`scripts/cross_backend` in the CALLIOPE repository) |
 | `fig04_chili_validation/data/cache_chili.npz` | melt-fraction and temperature curves of the CHILI community benchmark (github.com/projectcuisines/chili) and of the PROTEUS Earth and Venus reference runs | PROTEUS (`tools/plot_chili_comparison.py`) |
 | `fig05_phi_sweep_m1/data/zalmoxis_phi_sweep_m1_mantle.csv` | interior radius of a 1 Earth-mass planet against mantle melt fraction | Zalmoxis |
@@ -78,12 +78,21 @@ The simulations and the cached validation data were produced with the software v
 | PROTEUS | v26.07.14 | [10.5281/zenodo.21358381](https://doi.org/10.5281/zenodo.21358381) |
 | Aragog | v26.07.04 | [10.5281/zenodo.21196696](https://doi.org/10.5281/zenodo.21196696) |
 | Zalmoxis | v26.07.13 | [10.5281/zenodo.21342353](https://doi.org/10.5281/zenodo.21342353) |
-| PALEOS | | Attia et al. (2026, submitted) |
+| PALEOS | v1.0.0 | [10.5281/zenodo.19000316](https://doi.org/10.5281/zenodo.19000316) (equation-of-state tables), [10.5281/zenodo.19221215](https://doi.org/10.5281/zenodo.19221215) (mass-radius tables), [Attia et al. (2026)](#references) |
 | CALLIOPE | v26.07.03 | [10.5281/zenodo.21162734](https://doi.org/10.5281/zenodo.21162734) |
-| atmodeller | v1.0.1 | Bower et al. (2025) |
-| AGNI | v1.9.4 | [10.5281/zenodo.15386789](https://doi.org/10.5281/zenodo.15386789) |
+| atmodeller | v1.0.1 | [Bower et al. (2025)](#references) |
+| AGNI | v1.9.4 | [10.5281/zenodo.15386789](https://doi.org/10.5281/zenodo.15386789), [Nicholls et al. (2025)](#references) |
 | MORS | v26.07.12 | [10.5281/zenodo.21315171](https://doi.org/10.5281/zenodo.21315171) |
 | ZEPHYRUS | v26.07.10 | [10.5281/zenodo.21301993](https://doi.org/10.5281/zenodo.21301993) |
+
+## References
+
+- Attia, M., Lichtenberg, T., Jungová, E., and Sastre, M. (2026). PALEOS: Multiphase equations of state and mass-radius relations for exoplanet interiors. Astronomy and Astrophysics, in press. [doi:10.1051/0004-6361/202660790](https://doi.org/10.1051/0004-6361/202660790), [arXiv:2605.03741](https://arxiv.org/abs/2605.03741)
+- Bower, D. J., Thompson, M. A., Hakim, K., Tian, M., and Sossi, P. A. (2025). Diversity of low-mass planet atmospheres in the C-H-O-N-S-Cl system with interior dissolution, nonideality, and condensation: application to TRAPPIST-1e and sub-Neptunes. The Astrophysical Journal, 995, 59. [doi:10.3847/1538-4357/ae1479](https://doi.org/10.3847/1538-4357/ae1479), [ADS](https://ui.adsabs.harvard.edu/abs/2025ApJ...995...59B)
+- Huang, C., Rice, D. R., and Steffen, J. H. (2022). MAGRATHEA: an open-source spherical symmetric planet interior structure code. Monthly Notices of the Royal Astronomical Society, 513, 5256. [doi:10.1093/mnras/stac1133](https://doi.org/10.1093/mnras/stac1133), [ADS](https://ui.adsabs.harvard.edu/abs/2022MNRAS.513.5256H)
+- Nicholls, H., Pierrehumbert, R., and Lichtenberg, T. (2025). AGNI: a radiative-convective model for lava planet atmospheres. The Journal of Open Source Software, 10, 7726. [doi:10.21105/joss.07726](https://doi.org/10.21105/joss.07726), [ADS](https://ui.adsabs.harvard.edu/abs/2025JOSS...10.7726N)
+- Seager, S., Kuchner, M., Hier-Majumder, C. A., and Militzer, B. (2007). Mass-radius relationships for solid exoplanets. The Astrophysical Journal, 669, 1279. [doi:10.1086/521346](https://doi.org/10.1086/521346), [ADS](https://ui.adsabs.harvard.edu/abs/2007ApJ...669.1279S)
+- Zeng, L., Sasselov, D. D., and Jacobsen, S. B. (2016). Mass-radius relation for rocky planets based on PREM. The Astrophysical Journal, 819, 127. [doi:10.3847/0004-637X/819/2/127](https://doi.org/10.3847/0004-637X/819/2/127), [ADS](https://ui.adsabs.harvard.edu/abs/2016ApJ...819..127Z)
 
 ## Citation and licence
 
