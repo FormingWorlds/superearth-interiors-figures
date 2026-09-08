@@ -98,5 +98,6 @@ The simulations and the cached validation data were produced with the software v
 
 Cite the paper and this record (see `CITATION.cff`). The paper:
 
-> Lichtenberg, T., Attia, M., Nicholls, H., Sastre, M., Bower, D. J., Stuitje, K., Pascal, F. C., Soucasse, L., Apai, D., Bos, P., Calder, R., Cesario, L., Dang, L., Decocq, E., van Dijk, M., Farhat, M., Hakim, K., Kimura, T., Kisvárdai, I., Krijt, S., Miguel, Y., Panagiotou, I., Postolec, E., Schlecker, M., Seager, S., Shahar, A., Shorttle, O., Sossi, P. A., and van Westrenen, W. (2026). Super-Earth Interiors Shrink by About 10% as They Crystallise. The Planetary Science Journal, in preparation.
- Everything in this repository is released under the Creative Commons Attribution 4.0 International licence (`LICENSE`); the bundled fonts keep their SIL Open Font License.
+> Lichtenberg, T., Attia, M., Nicholls, H., Sastre, M., Bower, D. J., Stuitje, K., Pascal, F. C., Soucasse, L., Apai, D., Bos, P., Calder, R., Cesario, L., Dang, L., Decocq, E., van Dijk, M., Farhat, M., Hakim, K., Kimura, T., Kisvárdai, I., Krijt, S., Miguel, Y., Panagiotou, I., Postolec, E., Schlecker, M., Seager, S., Shahar, A., Shorttle, O., Sossi, P. A., and van Westrenen, W. (2026). Super-Earth Interiors Shrink by About 10% as They Crystallise.
+
+Everything in this repository is released under the Creative Commons Attribution 4.0 International licence (`LICENSE`); the bundled fonts keep their SIL Open Font License.
