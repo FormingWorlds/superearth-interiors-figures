@@ -57,7 +57,7 @@ CSV = os.path.join(DATA_DIR, 'fig3_grid.csv')
 C_CAL = ix.CORE['ocean']    # CALLIOPE, Fischer default
 C_ATM = ix.CORE['magma']    # atmodeller, Hirschmann composite
 C_LEG = ix.NEUTRALS.get('graphite', '#666')  # legacy O'Neill / raw-gap grey
-C_RES = ix.CORE.get('tidal', '#593E74')  # buffer-corrected residual
+C_RES = ix.STRATA['plum']  # buffer-corrected residual
 
 
 def _load():

@@ -36,9 +36,9 @@ Each figure directory holds one plotting script and the data it reads. A directo
 
 Shared directories:
 
-- `data/helpfiles/<run>/`: the PROTEUS output of the 41 coupled simulation runs that Figures 6, 7 and 8 read. Each run directory holds `runtime_helpfile.csv` (tab-separated, one row per time step, reduced to the columns the figure scripts read, all rows kept, values copied verbatim), the run configuration `init_coupler.toml`, and the termination status `status.txt`.
+- `data/helpfiles/<run>/`: the PROTEUS output of the 41 coupled simulation runs that Figures 6, 7 and 8 read. Each run directory holds `runtime_helpfile.csv` (tab-separated, one row per time step, reduced to the columns the figure scripts read, all rows kept, values copied verbatim), the run configuration `init_coupler.toml`, and the status of the run when the output was archived, `status.txt`. Four S2 runs (`S2_m5_IWp2_fixed`, `S2_m5_IWp2_oxauth`, `S2_m5_IWp3_oxauth`, `S2_m5_IWp4_fixed`) were still advancing when archived; Figure 7 reads from them only the state interpolated at global melt fraction 0.40 and the values at the first time step, both inside the range every one of them covers.
 - `provenance/extract_helpfiles.py`: the script that produced `data/helpfiles/` from the full PROTEUS output, with the per-run column lists. The full output (more than 300 columns per time step, about 3 GB) is archived on the Kapteyn Astronomical Institute data server.
-- `style/`: the PROTEUS matplotlib style (`proteus_mpl.py`, tokens, style sheets) with the bundled fonts Instrument Sans, Sora and Spline Sans Mono (SIL Open Font License, `style/proteus_assets/fonts/OFL.txt`).
+- `style/`: the PROTEUS visual language for matplotlib (`proteus_mpl.py`, tokens, style sheets; Apache License 2.0, `style/proteus_assets/LICENSE-CODE`, from [FormingWorlds/proteus-visual-language](https://github.com/FormingWorlds/proteus-visual-language)) with the bundled fonts Instrument Sans, Sora and Spline Sans Mono (SIL Open Font License, `style/proteus_assets/fonts/OFL.txt`).
 - `figures/`: the output of `make_figures.py`, committed so the repository shows the result.
 
 ## Simulation runs in `data/helpfiles/`
@@ -100,4 +100,4 @@ Cite the paper and this record (see `CITATION.cff`). The paper:
 
 > Lichtenberg, T., Attia, M., Nicholls, H., Sastre, M., Bower, D. J., Stuitje, K., Pascal, F. C., Soucasse, L., Apai, D., Bos, P., Calder, R., Cesario, L., Dang, L., Decocq, E., van Dijk, M., Farhat, M., Hakim, K., Kimura, T., Kisvárdai, I., Krijt, S., Miguel, Y., Panagiotou, I., Postolec, E., Schlecker, M., Seager, S., Shahar, A., Shorttle, O., Sossi, P. A., and van Westrenen, W. (2026). Super-Earth Interiors Shrink by About 10% as They Crystallise.
 
-Everything in this repository is released under the Creative Commons Attribution 4.0 International licence (`LICENSE`); the bundled fonts keep their SIL Open Font License.
+The data, the figures and the scripts in this repository are released under the Creative Commons Attribution 4.0 International licence (`LICENSE`). The vendored PROTEUS visual-language code in `style/` keeps its Apache License 2.0 (`style/proteus_assets/LICENSE-CODE`) and the bundled fonts their SIL Open Font License (`style/proteus_assets/fonts/OFL.txt`).

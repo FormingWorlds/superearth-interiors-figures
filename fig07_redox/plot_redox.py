@@ -13,20 +13,21 @@ The oxidising extreme IW+6 is excluded from both treatments: the fixed-fugacity
 mode draws an unbounded O2 atmosphere there (mass non-conservation), so the
 physical sweep spans IW-6..+5.
 
-Three panels:
+Two panels:
 (a) atmospheric speciation (volume mixing ratio of the main C-H-O-S species)
     against imposed IW, at a common crystallisation snapshot (Phi = 0.40, the
     rheological front of Section 4.1), isolating the redox response from the
     differing crystallisation states of the runs: the reduced (CO, H2, S2) to
     oxidised (CO2, O2, SO2) transition, with sulfur flipping from S2 at the
     reducing end to SO2-dominated at the oxidising end.
-(b) derived IW offset of the oxygen-authoritative twins against the imposed IW
-    of the fixed-fugacity twins, with the 1:1 line: at equal conserved oxygen
-    the two treatments recover the same oxidation state, validating their
-    equivalence; closure loosens at both extremes.
-(c) free-oxygen budget (conserved oxygen inventory) against imposed IW, on a
-    log axis: monotonic and steepening sharply toward the oxidising end, where
-    the fixed-fugacity treatment ultimately breaks down (IW+6, excluded).
+(b) on the left axis, the derived IW offset of the oxygen-authoritative twins
+    against the imposed IW of the fixed-fugacity twins, with the 1:1 line: at
+    equal conserved oxygen the two treatments recover the same oxidation state,
+    validating their equivalence; closure loosens at both extremes. On the
+    right (log) axis, the free-oxygen budget (conserved oxygen inventory)
+    against imposed IW: monotonic and steepening sharply toward the oxidising
+    end, where the fixed-fugacity treatment ultimately breaks down (IW+6,
+    excluded).
 
 The derived IW offset and the oxygen budget are read at the initial outgassing
 equilibrium (t=0), where they are written; the speciation is the interpolated

@@ -64,7 +64,7 @@ def run_specs():
 
 def extract(src, dst, cols):
     """Copy the named columns of a tab-separated helpfile, all rows, text intact."""
-    if os.path.abspath(src) == os.path.abspath(dst):
+    if os.path.exists(dst) and os.path.samefile(src, dst):
         raise ValueError(f"{src}: source and destination are the same file")
     with open(src, newline="") as fh:
         rows = list(csv.reader(fh, delimiter="\t"))

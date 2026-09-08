@@ -4,16 +4,16 @@ The crystallisation contraction of the fiducial 5 Mearth reference is varied
 one axis at a time and the total contraction (measured from the molten peak) is
 compared across the set. Two panels:
 
-(a) total contraction against core-mass fraction: the contraction is driven by
-    the silicate shell, so a more iron-rich planet, with less mantle to
-    crystallise, contracts less.
-(b) total contraction for the host-star / irradiation and initial-superheat
+(a) total contraction for the host-star / irradiation and initial-superheat
     variations, against the fiducial reference band: the host star and the
     instellation leave the contraction unchanged (the environment sets the floor
     surface temperature, annotated, not the contraction), while the apparent
     superheat spread reflects the molten-peak reference, the solidified radius
     being superheat-independent. Tidal heating holds the interior molten and is
     noted separately.
+(b) total contraction against core-mass fraction: the contraction is driven by
+    the silicate shell, so a more iron-rich planet, with less mantle to
+    crystallise, contracts less.
 
 Values are read from robustness_summary.csv (the near-final lower bounds quoted
 in Results 4.5, extracted from the S5/S6 runs).

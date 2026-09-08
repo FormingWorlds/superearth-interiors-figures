@@ -49,8 +49,8 @@ CORE = dict(_C)
 STRATA = {
     "gold": _C["azure"],    # #4FA3D9
     "amber": _C["magma"],   # #E23D28  bright warm accent
-    "magma": _C["outgassing"] if "outgassing" in _C else "#A03123",
-    "plum": _C["tidal"] if "tidal" in _C else "#593E74",
+    "magma": _TOKENS["domains"]["outgassing"],  # #A03123
+    "plum": _TOKENS["domains"]["tidal"],        # #593E74
     "cobalt": _C["ocean"],  # #1B6FA8
     "ink": _C["ink"],       # #10151B
     "sage": _C["ice"],      # #A8D4E8

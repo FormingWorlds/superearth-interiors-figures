@@ -84,8 +84,6 @@ def compile_tikz(subdir, tex, pdf, outdir):
             return False
         copy_if_different(src, target)
         return True
-    if os.path.isfile(target):
-        os.remove(target)
     print(f"[{subdir}] latexmk -pdf {tex}", flush=True)
     res = subprocess.run(["latexmk", "-pdf", "-interaction=nonstopmode", tex],
                          cwd=cwd, capture_output=True, text=True)
@@ -109,8 +107,9 @@ def main():
 
     selected = [entry for entry in FIGURES
                 if args.only is None or any(k in entry[0] for k in args.only)]
-    if not selected:
-        sys.exit(f"--only {' '.join(args.only)} matches no figure directory")
+    for k in args.only or []:
+        if not any(k in entry[0] for entry in FIGURES):
+            sys.exit(f"--only {k} matches no figure directory")
 
     failures = []
     for subdir, script, files in selected:

@@ -2,7 +2,7 @@
   "title": "Figure data and scripts for: Super-Earth Interiors Shrink by About 10% as They Crystallise",
   "upload_type": "dataset",
   "description": "Data and Python scripts that reproduce every figure of the paper 'Super-Earth Interiors Shrink by About 10% as They Crystallise' (Lichtenberg et al. 2026). The repository is self-contained: one command regenerates all 19 figures from the included data with numpy, matplotlib and pandas. It holds the reduced PROTEUS run output (the columns the figures read, all time steps, for the 41 simulation runs the figures use), the run configuration of each run, the cached validation data for Zalmoxis, Aragog, CALLIOPE and the CHILI comparison, the Zalmoxis mass-radius grids and literature reference curves, the TikZ source of the schematic figure, and the plotting scripts.",
-  "license": "CC-BY-4.0",
+  "license": "cc-by-4.0",
   "keywords": [
     "super-Earths",
     "magma ocean",

@@ -15,18 +15,18 @@ against the analytic result.
 
 Three figures are produced, each saved as vector PDF:
 
-1. ``spheres.pdf`` - constant-density sphere (top row) and a two-layer
-   core + mantle sphere (bottom row), sharing the radius axis. Tests the
-   ODE integrator against M ~ r^3, g ~ r, P parabolic, and the layer
-   assignment and Gauss's law across a density discontinuity.
-2. ``lane_emden.pdf`` - n = 1 polytrope, P = K rho^2, against the exact
-   solution rho(r) = rho_c sin(xi) / xi. The top row runs the integrator
-   alone (injected density, prescribed central pressure); the bottom row
-   runs the full production solver (outer mass-radius search, Picard
-   density iteration, Brent central-pressure root-find, and the production
-   ``Analytic:`` dispatch via the registered ``polytrope_n1`` material),
-   verifying the entire solver chain at its production tolerance.
-3. ``conservation_convergence.pdf`` - one four-panel row: pointwise
+1. ``zalmoxis_spheres.pdf`` - one three-panel row for a two-layer core +
+   mantle sphere: enclosed mass, gravity against Gauss's law, and the
+   relative errors. Tests the ODE integrator, the layer assignment and
+   Gauss's law across a density discontinuity.
+2. ``zalmoxis_lane_emden.pdf`` - one four-panel row for the n = 1
+   polytrope, P = K rho^2, against the exact solution
+   rho(r) = rho_c sin(xi) / xi, with the integrator alone (injected density,
+   prescribed central pressure) and the full solver (outer mass-radius
+   search, Picard density iteration, Brent central-pressure root-find, and
+   the ``Analytic:`` dispatch via the registered ``polytrope_n1`` material)
+   overlaid, verifying the whole solver at its production tolerance.
+3. ``zalmoxis_conservation_convergence.pdf`` - one four-panel row: pointwise
    Gauss's law and hydrostatic-balance residuals for the constant-density
    sphere (a, b), and the integrator-tolerance convergence for the
    polytrope against the exact uniform sphere (c) with the error's
