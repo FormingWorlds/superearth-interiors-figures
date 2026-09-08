@@ -1,6 +1,6 @@
 # Figure data and scripts: Super-Earth Interiors Shrink by About 10% as They Crystallise
 
-Data and scripts that reproduce every figure of the paper *Super-Earth Interiors Shrink by About 10% as They Crystallise* (Lichtenberg et al. 2026). The repository is self-contained: one command regenerates all 19 figures from the data it holds. Nothing is downloaded, no environment variable is read, and no file outside the repository is touched.
+Data and scripts that reproduce every figure of the paper *Super-Earth Interiors Shrink by About 10% as They Crystallise* (Lichtenberg et al. 2026). Archived on Zenodo: [10.5281/zenodo.22663462](https://doi.org/10.5281/zenodo.22663462) (all versions; the first release, v26.09.08, is [10.5281/zenodo.22663463](https://doi.org/10.5281/zenodo.22663463)). The repository is self-contained: one command regenerates all 19 figures from the data it holds. Nothing is downloaded, no environment variable is read, and no file outside the repository is touched.
 
 ## Quick start
 
@@ -96,7 +96,7 @@ The simulations and the cached validation data were produced with the software v
 
 ## Citation and licence
 
-Cite the paper and this record (see `CITATION.cff`). The paper:
+Cite the paper and this record, [10.5281/zenodo.22663462](https://doi.org/10.5281/zenodo.22663462) (see `CITATION.cff`). The paper:
 
 > Lichtenberg, T., Attia, M., Nicholls, H., Sastre, M., Bower, D. J., Stuitje, K., Pascal, F. C., Soucasse, L., Apai, D., Bos, P., Calder, R., Cesario, L., Dang, L., Decocq, E., van Dijk, M., Farhat, M., Hakim, K., Kimura, T., Kisvárdai, I., Krijt, S., Miguel, Y., Panagiotou, I., Postolec, E., Schlecker, M., Seager, S., Shahar, A., Shorttle, O., Sossi, P. A., and van Westrenen, W. (2026). Super-Earth Interiors Shrink by About 10% as They Crystallise.
 
