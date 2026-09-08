@@ -10,7 +10,7 @@ conda activate superearth-figures
 python make_figures.py
 ```
 
-The PDFs are written to `figures/` under the file names used in the paper. `python make_figures.py --only redox volatiles` runs a subset. Figure 1 is a TikZ drawing; `make_figures.py` compiles it when `latexmk` is on the PATH and otherwise skips it with a message (the compiled PDF is in `figures/` in any case).
+The PDFs are written to `figures/` under the file names used in the paper. `python make_figures.py --only redox volatiles` runs a subset. Figure 1 is a TikZ drawing; `make_figures.py` compiles it when `latexmk` is on the PATH and otherwise copies the committed `figures/proteus_loop.pdf` into the output directory.
 
 The plotting needs Python 3.12 with numpy, matplotlib and pandas; `requirements.txt` pins the versions that produced the figures in the paper, and `environment.yml` installs them from PyPI into a conda environment (`pip install -r requirements.txt` in any Python 3.12 works as well). The PyPI wheel of matplotlib bundles FreeType 2.6.1, and the figures in the paper were rendered with it; a matplotlib built against another FreeType version, for example the conda-forge package, places glyphs a fraction of a point differently.
 
@@ -51,7 +51,7 @@ Shared directories:
 
 Columns kept per run: S1, `Time R_int R_obs R_core Phi_global T_magma T_surf T_cmb R_solvus RF_depth P_surf M_mantle_solid M_mantle_liquid gravity fO2_shift_IW_derived` (Figure 8 reads `R_int`, `Phi_global` and `P_surf` from the dynamic runs); S2 fixed-fugacity, `Phi_global P_surf` plus the volume mixing ratio of H2O, H2, CO2, CO, O2, CH4, N2, S2, SO2, H2S and the total mass of H2O, CO2, CO, O2; S2 oxygen-conserving, `Phi_global fO2_shift_IW_derived`; S3, `R_int Phi_global P_surf`.
 
-`fig07_redox/data/phi040_window.csv` holds the S2 fixed-fugacity and oxygen-conserving runs at IW0 to IW+5 in a window around global melt fraction 0.40, from a re-run of those configurations with corrected sulfur speciation. `plot_redox.py` reads the oxidising half of the speciation panel from this file and everything else from `data/helpfiles/`; the comments at the top of the script give the reason.
+`fig07_redox/data/phi040_window.csv` holds the S2 fixed-fugacity runs at IW0 to IW+5 in a window around global melt fraction 0.40, from a separate set of runs of the same configurations with sulfur speciation resolved (in the S2 helpfiles the SO2 mixing ratio is floored at 1e-30). `plot_redox.py` reads the oxidising half of the speciation panel from this file and everything else from `data/helpfiles/`.
 
 ## Provenance of the cached validation data
 

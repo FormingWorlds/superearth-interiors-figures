@@ -258,7 +258,8 @@ def _load_or_compute(name, compute_fn, recompute=False):
             cached = {k: f[k] for k in f.files}
         if str(cached.get('_sig', '')) == sig:
             return {k: v for k, v in cached.items() if k != '_sig'}
-        logger.warning('  cache %s predates a code or constant change; recomputing', name)
+        raise RuntimeError(f'cache {name}.npz does not match the compute functions in this '
+                           'script; restore the script or rerun with --recompute')
     data = compute_fn()
     os.makedirs(DATA_DIR, exist_ok=True)
     np.savez(path, _sig=np.array(sig), **data)

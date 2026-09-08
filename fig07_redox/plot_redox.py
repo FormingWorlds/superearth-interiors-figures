@@ -63,11 +63,12 @@ plt.rcParams.update({
 })
 
 DEF_S2 = os.path.join(os.path.dirname(HERE), "data", "helpfiles")
-# The archived grid supplies the reducing half of the speciation panel and the
-# round-trip and oxygen-budget panels. The sulfur-recovery (SO2) fix is not in that
-# grid, so the oxidising half of the speciation panel (IW0..+5, where sulfur speciation
-# matters) reads the corrected re-run window below, which agrees with the final grid at
-# the IW0 seam. Both are the 5 Mearth S2 sweep at the common Phi=0.40 snapshot.
+# The S2 helpfiles supply the reducing half of the speciation panel and the round-trip
+# and oxygen-budget panels. Their SO2 mixing ratio is floored at 1e-30, so the oxidising
+# half of the speciation panel (IW0..+5, where sulfur speciation matters) reads the
+# window file below, a separate set of runs of the same configurations with sulfur
+# speciation resolved; the two agree at the IW0 seam. Both are the 5 Mearth S2 sweep at
+# the common Phi=0.40 snapshot.
 DEF_RERUN = os.path.join(HERE, "data", "phi040_window.csv")
 # imposed IW offsets and run-name tokens; IW+6 excluded (mass-conservation breakdown)
 IW_TOKENS = [("m6", -6), ("m5", -5), ("m4", -4), ("m3", -3), ("m2", -2), ("m1", -1),
@@ -203,11 +204,10 @@ def main():
     oxa_iw, oxa_der = [], []
     for tok, val in IW_TOKENS:
         fx = os.path.join(args.s2dir, f"S2_m5_IW{tok}_fixed", "runtime_helpfile.csv")
-        # Speciation + surface pressure: oxidising half (IW>=0) from the corrected
-        # re-run (SO2 recovered, fixed-fugacity O2 no longer runs away); reducing
-        # half from the original grid. The conserved-oxygen budget is a t=0
-        # equilibrium quantity that drifts under one per cent with the fix, so it
-        # is read from the original grid throughout.
+        # Speciation + surface pressure: oxidising half (IW>=0) from the window file,
+        # reducing half from the S2 helpfiles. The conserved-oxygen budget is a t=0
+        # equilibrium quantity that differs by under one per cent between the two
+        # sets, so it is read from the S2 helpfiles throughout.
         rr = rerun.get(f"S2_m5_IW{tok}_fixed") if val >= 0 else None
         if rr is not None:
             iw.append(val)

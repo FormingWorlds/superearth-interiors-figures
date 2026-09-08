@@ -32,15 +32,15 @@ authors:
   - family-names: Pascal
     given-names: Flavia C.
     orcid: "https://orcid.org/0009-0007-4663-1456"
-    affiliation: "Kapteyn Astronomical Institute, University of Groningen"
+    affiliation: "Kapteyn Astronomical Institute, University of Groningen; Institute of Astronomy, University of Cambridge"
   - family-names: Soucasse
     given-names: Laurent
     orcid: "https://orcid.org/0000-0002-5422-8794"
-    affiliation: "IMEC, Leuven"
+    affiliation: "IMEC, Leuven; Netherlands eScience Center, Amsterdam"
   - family-names: Apai
     given-names: Daniel
     orcid: "https://orcid.org/0000-0003-3714-5855"
-    affiliation: "Department of Astronomy/Steward Observatory, University of Arizona"
+    affiliation: "Department of Astronomy/Steward Observatory, University of Arizona; Lunar and Planetary Laboratory, University of Arizona"
   - family-names: Bos
     given-names: Patrick
     orcid: "https://orcid.org/0000-0002-6033-960X"
@@ -72,11 +72,11 @@ authors:
   - family-names: Hakim
     given-names: Kaustubh
     orcid: "https://orcid.org/0000-0003-4815-2874"
-    affiliation: "Royal Observatory of Belgium"
+    affiliation: "Royal Observatory of Belgium; Institute of Astronomy, KU Leuven"
   - family-names: Kimura
     given-names: Tadahiro
     orcid: "https://orcid.org/0000-0001-8477-2523"
-    affiliation: "UTokyo Organization for Planetary Space Science (UTOPS), University of Tokyo"
+    affiliation: "UTokyo Organization for Planetary Space Science (UTOPS), University of Tokyo; Kapteyn Astronomical Institute, University of Groningen"
   - family-names: Kisvárdai
     given-names: Imre
     orcid: "https://orcid.org/0009-0009-7323-6755"
@@ -88,7 +88,7 @@ authors:
   - family-names: Miguel
     given-names: Yamila
     orcid: "https://orcid.org/0000-0002-0747-8862"
-    affiliation: "Leiden Observatory, Leiden University"
+    affiliation: "Leiden Observatory, Leiden University; SRON Netherlands Institute for Space Research, Leiden"
   - family-names: Panagiotou
     given-names: Ioannis
     orcid: "https://orcid.org/0009-0005-9147-0431"
@@ -112,7 +112,7 @@ authors:
   - family-names: Shorttle
     given-names: Oliver
     orcid: "https://orcid.org/0000-0002-8713-1446"
-    affiliation: "Institute of Astronomy, University of Cambridge"
+    affiliation: "Institute of Astronomy, University of Cambridge; Department of Earth Sciences, University of Cambridge"
   - family-names: Sossi
     given-names: Paolo A.
     orcid: "https://orcid.org/0000-0002-1462-1882"

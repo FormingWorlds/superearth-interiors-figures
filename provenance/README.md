@@ -10,4 +10,4 @@ python provenance/extract_helpfiles.py --grid /path/to/archived/runs
 
 The full output (about 3 GB) is archived on the data server of the Kapteyn Astronomical Institute, University of Groningen, and is available from the corresponding author.
 
-`fig06_contraction_grid/data/cache_shrinking.npz` is built from the S1 runs in `data/helpfiles/` by `fig06_contraction_grid/compute_shrinking.py`; running that script on the reduced helpfiles reproduces the cache array for array.
+`fig06_contraction_grid/data/cache_shrinking.npz` is built from the S1 runs in `data/helpfiles/` by `fig06_contraction_grid/compute_shrinking.py`; running that script on the reduced helpfiles reproduces the cache array by array.

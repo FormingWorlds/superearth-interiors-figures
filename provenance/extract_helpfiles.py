@@ -4,8 +4,10 @@ The figure scripts for the contraction grid, the redox sweep and the volatile
 inventory read ``runtime_helpfile.csv`` of individual PROTEUS runs. The full
 helpfiles carry more than 300 columns per time step; this script copies only the
 columns those scripts use, for the runs they use, into ``data/helpfiles/<run>/``
-at the repository root. Every row is kept and every value is copied as the
-original text, so the reduced files reproduce the figures exactly.
+at the repository root, together with each run's configuration file
+``init_coupler.toml`` and its termination status ``status`` (as ``status.txt``).
+Every row is kept and every value is copied as the original text, so the
+reduced files reproduce the figures exactly.
 
 Usage
 -----
@@ -20,6 +22,7 @@ from __future__ import annotations
 import argparse
 import csv
 import os
+import shutil
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
@@ -61,8 +64,12 @@ def run_specs():
 
 def extract(src, dst, cols):
     """Copy the named columns of a tab-separated helpfile, all rows, text intact."""
+    if os.path.abspath(src) == os.path.abspath(dst):
+        raise ValueError(f"{src}: source and destination are the same file")
     with open(src, newline="") as fh:
         rows = list(csv.reader(fh, delimiter="\t"))
+    if not rows:
+        raise ValueError(f"{src}: empty helpfile")
     header = rows[0]
     missing = [c for c in cols if c not in header]
     if missing:
@@ -83,10 +90,18 @@ def main():
     ap.add_argument("--grid", required=True, help="directory of archived PROTEUS runs")
     ap.add_argument("--out", default=OUT)
     args = ap.parse_args()
+    if not os.path.isdir(args.grid):
+        raise SystemExit(f"{args.grid} is not a directory")
     for run, cols in run_specs().items():
         src = os.path.join(args.grid, run, "runtime_helpfile.csv")
         dst = os.path.join(args.out, run, "runtime_helpfile.csv")
+        if not os.path.isfile(src):
+            raise SystemExit(f"{src} not found; the figures need all {len(run_specs())} runs")
         n, k = extract(src, dst, cols)
+        shutil.copyfile(os.path.join(args.grid, run, "init_coupler.toml"),
+                        os.path.join(args.out, run, "init_coupler.toml"))
+        shutil.copyfile(os.path.join(args.grid, run, "status"),
+                        os.path.join(args.out, run, "status.txt"))
         print(f"{run:22s} {n:6d} rows  {k:2d} columns")
 
 

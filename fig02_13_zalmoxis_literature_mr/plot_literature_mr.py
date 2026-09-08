@@ -21,6 +21,7 @@ only numpy, pandas, and matplotlib.
 
 from __future__ import annotations
 
+import argparse
 import os
 import sys
 
@@ -45,8 +46,7 @@ plt.rcParams.update({
 })
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-# output directory: first command-line argument, else ./figures
-OUTDIR = sys.argv[1] if len(sys.argv) > 1 else os.path.join(HERE, 'figures')
+OUTDIR = os.path.join(HERE, 'figures')  # overridden by --outdir
 # Physics-code outputs are assembled in-repo so the figures reproduce from the
 # repository alone (no PROTEUS/Zalmoxis checkout needed): mass-radius grid
 # summaries (zalmoxis_grids/<grid>.csv) and interior profiles
@@ -335,6 +335,11 @@ def plot_profiles():
 
 
 def main():
+    global OUTDIR
+    ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
+    ap.add_argument('--outdir', default=OUTDIR)
+    OUTDIR = ap.parse_args().outdir
+    os.makedirs(OUTDIR, exist_ok=True)
     paleos_cold = _load_grid('se_mr_paleos_cold')
     seager = _load_grid('se_mr_seager')
     magrathea = _load_magrathea()

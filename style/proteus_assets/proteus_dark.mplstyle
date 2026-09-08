@@ -1,4 +1,4 @@
-# PROTEUS Thermocline — dark overrides (Void background)
+# PROTEUS Thermocline: dark overrides (Void background)
 # Apply on top of proteus.mplstyle; matches dark slides and dark docs.
 
 figure.facecolor:      05070B
