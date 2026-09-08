@@ -1,0 +1,15 @@
+# Total crystallisation contraction (per cent, measured from the molten peak) for
+# the single-axis robustness variations around the fiducial 5 M_Earth reference
+# (CMF 0.325, Sun at 1 AU, dynamic structure). Values are read from the final
+# banked grid (data/kapteyn_grid_20260706) at each run's certified crystallisation
+# floor. Notes carry the floor surface temperature (endpoint T_surf) and the core
+# radius fraction R_core / R_int at the floor.
+group,label,x,contraction_pct,note
+cmf,CMF 0.2,0.2,10.7,core radius 0.42 R_int
+cmf,CMF 0.5,0.5,9.3,core radius 0.61 R_int
+cmf,CMF 0.7,0.7,7.6,core radius 0.73 R_int
+env,Sun 0.1 AU,0,10.3,Tsurf 2120 K
+env,Sun 0.3 AU,1,10.2,Tsurf 2390 K
+env,M dwarf 0.1 AU,2,10.2,Tsurf 1550 K
+init,superheat +100 K,3,9.4,same solidified radius
+init,superheat +900 K,4,10.8,same solidified radius

@@ -1,0 +1,123 @@
+cff-version: 1.2.0
+message: "If you use these data or scripts, cite the paper and this record."
+title: "Figure data and scripts for: Super-Earth Interiors Shrink by About 10% as They Crystallise"
+type: dataset
+license: CC-BY-4.0
+repository-code: "https://github.com/FormingWorlds/superearth-interiors-figures"
+authors:
+  - family-names: Lichtenberg
+    given-names: Tim
+    orcid: "https://orcid.org/0000-0002-3286-7683"
+    affiliation: "Kapteyn Astronomical Institute, University of Groningen"
+  - family-names: Attia
+    given-names: Mara
+    orcid: "https://orcid.org/0000-0002-7971-7439"
+    affiliation: "Kapteyn Astronomical Institute, University of Groningen"
+  - family-names: Nicholls
+    given-names: Harrison
+    orcid: "https://orcid.org/0000-0002-8368-4641"
+    affiliation: "Institute of Astronomy, University of Cambridge"
+  - family-names: Sastre
+    given-names: Mariana
+    orcid: "https://orcid.org/0009-0008-7799-7976"
+    affiliation: "Kapteyn Astronomical Institute, University of Groningen"
+  - family-names: Bower
+    given-names: Dan J.
+    orcid: "https://orcid.org/0000-0002-0673-4860"
+    affiliation: "Department of Earth and Planetary Sciences, ETH Zurich"
+  - family-names: Stuitje
+    given-names: Karen
+    orcid: "https://orcid.org/0009-0000-6847-4331"
+    affiliation: "Kapteyn Astronomical Institute, University of Groningen"
+  - family-names: Pascal
+    given-names: Flavia C.
+    orcid: "https://orcid.org/0009-0007-4663-1456"
+    affiliation: "Kapteyn Astronomical Institute, University of Groningen"
+  - family-names: Soucasse
+    given-names: Laurent
+    orcid: "https://orcid.org/0000-0002-5422-8794"
+    affiliation: "IMEC, Leuven"
+  - family-names: Apai
+    given-names: Daniel
+    orcid: "https://orcid.org/0000-0003-3714-5855"
+    affiliation: "Department of Astronomy/Steward Observatory, University of Arizona"
+  - family-names: Bos
+    given-names: Patrick
+    orcid: "https://orcid.org/0000-0002-6033-960X"
+    affiliation: "Kapteyn Astronomical Institute, University of Groningen"
+  - family-names: Calder
+    given-names: Robb
+    orcid: "https://orcid.org/0009-0002-9247-2437"
+    affiliation: "Institute of Astronomy, University of Cambridge"
+  - family-names: Cesario
+    given-names: Lorenzo
+    orcid: "https://orcid.org/0009-0009-7228-7809"
+    affiliation: "Kapteyn Astronomical Institute, University of Groningen"
+  - family-names: Dang
+    given-names: Lisa
+    orcid: "https://orcid.org/0000-0003-4987-6591"
+    affiliation: "Department of Physics and Astronomy and Waterloo Centre for Astrophysics, University of Waterloo"
+  - family-names: Decocq
+    given-names: Emeline
+    orcid: "https://orcid.org/0009-0008-3326-9715"
+    affiliation: "Kapteyn Astronomical Institute, University of Groningen"
+  - family-names: van Dijk
+    given-names: Marijn
+    orcid: "https://orcid.org/0009-0005-6677-1929"
+    affiliation: "Kapteyn Astronomical Institute, University of Groningen"
+  - family-names: Farhat
+    given-names: Mohammad
+    orcid: "https://orcid.org/0000-0001-7864-6627"
+    affiliation: "Department of Earth and Planetary Science, University of California, Berkeley"
+  - family-names: Hakim
+    given-names: Kaustubh
+    orcid: "https://orcid.org/0000-0003-4815-2874"
+    affiliation: "Royal Observatory of Belgium"
+  - family-names: Kimura
+    given-names: Tadahiro
+    orcid: "https://orcid.org/0000-0001-8477-2523"
+    affiliation: "UTokyo Organization for Planetary Space Science (UTOPS), University of Tokyo"
+  - family-names: Kisvárdai
+    given-names: Imre
+    orcid: "https://orcid.org/0009-0009-7323-6755"
+    affiliation: "Kapteyn Astronomical Institute, University of Groningen"
+  - family-names: Krijt
+    given-names: Sebastiaan
+    orcid: "https://orcid.org/0000-0002-3291-6887"
+    affiliation: "Department of Physics and Astronomy, University of Exeter"
+  - family-names: Miguel
+    given-names: Yamila
+    orcid: "https://orcid.org/0000-0002-0747-8862"
+    affiliation: "Leiden Observatory, Leiden University"
+  - family-names: Panagiotou
+    given-names: Ioannis
+    orcid: "https://orcid.org/0009-0005-9147-0431"
+    affiliation: "Kapteyn Astronomical Institute, University of Groningen"
+  - family-names: Postolec
+    given-names: Emma
+    orcid: "https://orcid.org/0009-0009-5036-3049"
+    affiliation: "Kapteyn Astronomical Institute, University of Groningen"
+  - family-names: Schlecker
+    given-names: Martin
+    orcid: "https://orcid.org/0000-0001-8355-2107"
+    affiliation: "European Southern Observatory"
+  - family-names: Seager
+    given-names: Sara
+    orcid: "https://orcid.org/0000-0002-6892-6948"
+    affiliation: "Department of Earth, Atmospheric and Planetary Sciences, Massachusetts Institute of Technology"
+  - family-names: Shahar
+    given-names: Anat
+    orcid: "https://orcid.org/0000-0002-0794-2717"
+    affiliation: "Earth and Planets Laboratory, Carnegie Institution for Science"
+  - family-names: Shorttle
+    given-names: Oliver
+    orcid: "https://orcid.org/0000-0002-8713-1446"
+    affiliation: "Institute of Astronomy, University of Cambridge"
+  - family-names: Sossi
+    given-names: Paolo A.
+    orcid: "https://orcid.org/0000-0002-1462-1882"
+    affiliation: "Department of Earth and Planetary Sciences, ETH Zurich"
+  - family-names: van Westrenen
+    given-names: Wim
+    orcid: "https://orcid.org/0000-0001-5828-8885"
+    affiliation: "Department of Earth Sciences, Vrije Universiteit Amsterdam"

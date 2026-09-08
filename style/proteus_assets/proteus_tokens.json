@@ -1,0 +1,114 @@
+{
+  "identity": "PROTEUS Thermocline visual language",
+  "version": "1.1.0",
+  "license": "Visual language and templates: Apache-2.0. Fonts: SIL Open Font License.",
+  "source": {
+    "repo": "https://github.com/FormingWorlds/proteus-visual-language",
+    "authoritative": "The proteus-visual-language repository is the authoritative guidance for the PROTEUS design language.",
+    "package": "proteus-mpl (import name proteus_mpl)",
+    "docs": "https://formingworlds.github.io/proteus-visual-language"
+  },
+  "colors": {
+    "comment": "Named brand colours (core hues, accents, neutrals). Solar is the star (bright #E0A32E for dark surfaces and the data cycle; solar_deep #C8860F for fills/text on light), verdant the habitable endpoint.",
+    "magma": "#E23D28",
+    "mantle": "#8E1F12",
+    "crimson": "#C2362B",
+    "ocean": "#1B6FA8",
+    "abyss": "#14406B",
+    "azure": "#4FA3D9",
+    "ice": "#A8D4E8",
+    "void": "#05070B",
+    "basalt": "#0E131B",
+    "paper": "#F2F5F7",
+    "ink": "#10151B",
+    "solar": "#E0A32E",
+    "solar_deep": "#C8860F",
+    "verdant": "#57A05C",
+    "fog": "#7A8894",
+    "mist": "#9FB0BE"
+  },
+  "domains": {
+    "comment": "Stable module-domain colours, identical across papers, talks, docs, and diagrams. CVD-checked (Machado 2009 protan/deutan/tritan, full severity): minimum pairwise deltaE = 16.4. Stellar is solar gold; use solar_deep for stellar fills or thin marks on light surfaces. Keep legends or direct labels on multi-series plots regardless.",
+    "interior": "#E23D28",
+    "outgassing": "#A03123",
+    "tidal": "#593E74",
+    "chemistry": "#1B6FA8",
+    "atmosphere": "#4FA3D9",
+    "stellar": "#E0A32E"
+  },
+  "domain_modules": {
+    "interior": "SPIDER, Aragog, Zalmoxis",
+    "outgassing": "CALLIOPE, Atmodeller",
+    "tidal": "LovePy, Obliqua",
+    "chemistry": "VULCAN, ZEPHYRUS",
+    "atmosphere": "AGNI, JANUS",
+    "stellar": "MORS"
+  },
+  "cycles": {
+    "comment": "Categorical series cycles, both neutral-first (first series draws in ink on light, paper on dark, so magma stays a deliberate signal). Light: ink + 7 hues + fog, CVD min pairwise deltaE = 15.7. Dark: paper + 5 hues, 16.8. Never insert extra neutral greys between the hues; past the cycle encode further series with line style, not more hues.",
+    "light": [
+      "#10151B",
+      "#E23D28",
+      "#E0A32E",
+      "#57A05C",
+      "#1B6FA8",
+      "#593E74",
+      "#A03123",
+      "#7A8894",
+      "#4FA3D9"
+    ],
+    "dark": [
+      "#F2F5F7",
+      "#E23D28",
+      "#E0A32E",
+      "#57C08A",
+      "#A8D4E8",
+      "#9B7BBE"
+    ]
+  },
+  "colormaps": {
+    "comment": "Continuous ramps. Sequential runs void -> paper (cool); diverging is a light-mid, print-safe crimson-to-ocean; phase is the full brand ramp with a dark midpoint. Each registers with a reversed _r companion.",
+    "sequential": {
+      "name": "proteus",
+      "stops": [
+        "#05070B",
+        "#14406B",
+        "#1B6FA8",
+        "#4FA3D9",
+        "#A8D4E8",
+        "#F2F5F7"
+      ]
+    },
+    "diverging": {
+      "name": "proteus_div",
+      "stops": [
+        "#C2362B",
+        "#E08373",
+        "#D8DEE3",
+        "#7FAED2",
+        "#1B6FA8"
+      ]
+    },
+    "phase": {
+      "name": "proteus_phase",
+      "stops": [
+        "#E23D28",
+        "#8E1F12",
+        "#3A120C",
+        "#05070B",
+        "#0E2A45",
+        "#14406B",
+        "#1B6FA8",
+        "#4FA3D9",
+        "#A8D4E8"
+      ]
+    }
+  },
+  "default_cmap": "proteus",
+  "fonts": {
+    "comment": "Sora for display / headings, Instrument Sans for body and figure text, Spline Sans Mono for the technical voice (code, numerals, model IDs). The style sheet uses Instrument Sans as the figure body font and Spline Sans Mono for monospace.",
+    "display": "Sora",
+    "body": "Instrument Sans",
+    "mono": "Spline Sans Mono"
+  }
+}

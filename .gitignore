@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.DS_Store
+# LaTeX build products of the Figure 1 schematic
+fig01_proteus_loop/*.aux
+fig01_proteus_loop/*.log
+fig01_proteus_loop/*.fls
+fig01_proteus_loop/*.fdb_latexmk
+fig01_proteus_loop/*.synctex.gz
