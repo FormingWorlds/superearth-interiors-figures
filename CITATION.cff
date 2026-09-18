@@ -5,7 +5,7 @@ type: dataset
 license: CC-BY-4.0
 repository-code: "https://github.com/FormingWorlds/superearth-interiors-figures"
 doi: 10.5281/zenodo.22663462
-version: v26.09.08
+version: v26.09.18
 authors:
   - family-names: Lichtenberg
     given-names: Tim
