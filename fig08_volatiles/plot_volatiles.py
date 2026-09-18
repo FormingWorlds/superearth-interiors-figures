@@ -16,8 +16,8 @@ contraction, tying 4.4 back to the contraction result of 4.2.
 
 Three panels against planet mass:
     (a) total crystallisation contraction (from the molten peak)
-    (b) crystallisation-floor melt fraction (how far solidification proceeds)
-    (c) surface pressure at the floor (the volatile ladder), log scale
+    (b) melt fraction at the crystallisation endpoint (how far solidification proceeds)
+    (c) surface pressure at the crystallisation endpoint (the volatile ladder), log scale
 
 Reads the helpfiles by column name.
 
@@ -129,7 +129,7 @@ def main():
     ax_c.text(2.4, 6.7, "contraction", fontsize=6.6, style="italic",
               color=ix.NEUTRALS["fog"], ha="center", va="bottom")
 
-    ax_p.set_ylabel(r"Floor melt fraction $\Phi$")
+    ax_p.set_ylabel(r"Endpoint melt fraction $\Phi$")
     ax_p.set_ylim(0, 0.9)
 
     ax_ps.set_xlabel(r"Planet mass [$M_\oplus$]")  # shared x-axis; label on the lowest panel
